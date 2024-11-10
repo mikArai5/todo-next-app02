@@ -1,7 +1,13 @@
-import type { NextConfig } from "next";
+/** / @type {import('next').NextConfig} */ 
 
-const nextConfig: NextConfig = {
+const nextConfig = {
   /* config options here */
+  experimental: {
+    serverActions: true,
+  },
+  items: {
+    domains: ['veshlaetdwukckchprum.supabase.co'],
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
